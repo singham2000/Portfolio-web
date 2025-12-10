@@ -3,286 +3,335 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="icon" href="/images/logo/logo.ico" type="image/x-icon">
+    <title>Surya Pratap | Senior Full Stack Developer</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-    <title>Surya Pratap</title>
+    <link rel="icon" href="/images/logo/logo.ico" type="image/x-icon">
 </head>
 
 <body>
-    <!-- navigation bar here!  -->
-    <nav class="navbar bg-body-secondary">
-        <div class="container-fluid">
-            <a class="navbar-brand text-danger" href="#">
-                <i class="bi bi-activity"></i>
-                <span class="fw-bolder">
-                    Surya Pratap
-                </span>
-            </a>
 
-            <!-- dropdown here -->
-            <div class="dropdown">
-                <a class="btn btn-danger" href="/Portfolio.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <i class="bi bi-list"></i>
-                </a>
+    <!-- Header / Navigation -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">SP<span>.</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about"><span class="nav-num">01.</span> About</a></li>
+                <li><a href="#experience"><span class="nav-num">02.</span> Experience</a></li>
+                <li><a href="#projects"><span class="nav-num">03.</span> Work</a></li>
+                <li><a href="#contact"><span class="nav-num">04.</span> Contact</a></li>
+                <li><a href="./resume.pdf" class="btn-small">Resume</a></li>
+                <li>
+                    <button id="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
 
-                <ul class="dropdown-menu dropdown-menu-end">
-                    <li><a class="dropdown-item" href="#">Home</a></li>
-                    <li><a class="dropdown-item" href="#">About us</a></li>
-                    <li><a class="dropdown-item" href="#">Services</a></li>
-                    <li><a class="dropdown-item" href="#">Portfolio</a></li>
-                    <li><a class="dropdown-item" href="#">Contact us</a></li>
-                    <li><a class="dropdown-item" href="#">Testimonial</a></li>
+    <!-- Social Side Bar -->
+    <div class="side-social">
+        <ul>
+            <li><a href="https://github.com/singham2000" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/singham2000/" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="mailto:thakursuryapratap9@gmail.com"><i class="far fa-envelope"></i></a></li>
+        </ul>
+        <div class="line"></div>
+    </div>
+
+    <!-- Email Side Bar -->
+    <div class="side-email">
+        <a href="mailto:thakursuryapratap9@gmail.com">thakursuryapratap9@gmail.com</a>
+        <div class="line"></div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section id="hero">
+            <p class="hero-intro" data-aos="fade-up" data-aos-delay="100">Hi, my name is</p>
+            <h1 class="hero-name" data-aos="fade-up" data-aos-delay="200">Surya Pratap.</h1>
+            <h2 class="hero-subtitle" data-aos="fade-up" data-aos-delay="300">I build scalable web solutions.</h2>
+            <p class="hero-text" data-aos="fade-up" data-aos-delay="400">
+                I am a Freelance Senior Full Stack Developer & Software Consultant specializing in building (and
+                actively designing) exceptional digital experiences. Currently, I'm focused on building accessible,
+                human-centered products for clients worldwide.
+            </p>
+            <div class="hero-cta" data-aos="fade-up" data-aos-delay="500">
+                <a href="#projects" class="btn-primary">Check out my work!</a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" data-aos="fade-up">
+            <h2 class="section-title"><span class="sec-num">01.</span> About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Hello! My name is Surya and I enjoy creating things that live on the internet. My journey in web
+                        development started back in 2019, and since then, I've had the privilege of working as a <span
+                            class="highlight">Freelance Senior Full Stack Developer</span> for startups and businesses
+                        across India, the USA, and Europe.
+                    </p>
+                    <p>
+                        I have 3+ years of experience delivering scalable, secure, and high-performance web
+                        applications. My expertise lies in end-to-end product development, cloud infrastructure, and API
+                        design.
+                    </p>
+                    <p>Here are a few technologies I've been working with recently:</p>
+                    <ul class="skills-list">
+                        <li>JavaScript (ES6+)</li>
+                        <li>TypeScript</li>
+                        <li>React & Next.js</li>
+                        <li>Node.js & Express.js</li>
+                        <li>PostgreSQL & MongoDB</li>
+                        <li>AWS & Docker</li>
+                    </ul>
+                </div>
+                <div class="about-img">
+                    <div class="img-wrapper">
+                        <!-- Placing a placeholder for now, user can replace src -->
+                        <img src="images/image.jpg" alt="Surya Pratap">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" data-aos="fade-up">
+            <h2 class="section-title"><span class="sec-num">02.</span> Where I've Worked</h2>
+
+            <div class="experience-tabs">
+                <div class="tab-list">
+                    <button class="tab-btn active" data-tab="freelance">Freelance</button>
+                    <!-- Add more tabs if historical data exists -->
+                </div>
+
+                <div class="tab-panels">
+                    <div class="tab-panel active" id="freelance">
+                        <h3>Senior Full Stack Developer <span class="company">@ Self-Employed</span></h3>
+                        <p class="duration">June 2022 - Present</p>
+                        <ul class="job-desc">
+                            <li>Delivered end-to-end web solutions including requirement analysis, system architecture,
+                                development, deployment, and maintenance.</li>
+                            <li>Built scalable applications using React.js, Next.js, Node.js, Express.js, and PostgreSQL
+                                supporting 1,000+ users.</li>
+                            <li>Designed cloud infrastructure with AWS, VPS, Docker, and CI/CD pipelines using GitHub
+                                Actions and Jenkins.</li>
+                            <li>Integrated Stripe, PayPal, Razorpay, Firebase, AWS S3, and CloudFront for payments,
+                                media, and notifications.</li>
+                            <li>Collaborated directly with international clients, managing timelines, features, and
+                                post-deployment support.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" data-aos="fade-up">
+            <h2 class="section-title"><span class="sec-num">03.</span> Some Things I've Built</h2>
+
+            <!-- Project 1 -->
+            <div class="project-item">
+                <div class="project-content">
+                    <p class="project-overline">Featured Project</p>
+                    <h3 class="project-title">OTT Streaming Platform</h3>
+                    <div class="project-desc">
+                        <p>A secure OTT platform with subscription access, admin dashboard, and media content
+                            management. Handles 5,000+ video assets using AWS high-performance services.</p>
+                    </div>
+                    <ul class="project-tech">
+                        <li>Next.js</li>
+                        <li>Node.js</li>
+                        <li>AWS S3/CloudFront</li>
+                        <li>PostgreSQL</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <div class="img-overlay"></div>
+                    <!-- Placeholder for project image -->
+                    <div class="placeholder-img">OTT Platform</div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-item right-aligned">
+                <div class="project-content">
+                    <p class="project-overline">Featured Project</p>
+                    <h3 class="project-title">Appointment Booking System</h3>
+                    <div class="project-desc">
+                        <p>Implemented international time-zone-aware booking and role-based admin management system for
+                            a global client base.</p>
+                    </div>
+                    <ul class="project-tech">
+                        <li>React</li>
+                        <li>Express.js</li>
+                        <li>PostgreSQL</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <div class="img-overlay"></div>
+                    <div class="placeholder-img">Booking System</div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-item">
+                <div class="project-content">
+                    <p class="project-overline">Featured Project</p>
+                    <h3 class="project-title">E-Commerce Platform</h3>
+                    <div class="project-desc">
+                        <p>Built a full e-commerce workflow with secure payments, product comparison, and real-time
+                            order tracking.</p>
+                    </div>
+                    <ul class="project-tech">
+                        <li>React</li>
+                        <li>Stripe</li>
+                        <li>Node.js</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <div class="img-overlay"></div>
+                    <div class="placeholder-img">E-Commerce</div>
+                </div>
+            </div>
+
+            <!-- Other Noteworthy Projects Grid (Existing ones from old portfolio) -->
+            <h3 class="other-projects-title">Other Noteworthy Projects</h3>
+            <div class="other-projects-grid">
+                <!-- Netflix Clone -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="card-top">
+                        <i class="far fa-folder"></i>
+                        <div class="card-links">
+                            <a href="https://netflix-singham.netlify.app/" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="card-title">Netflix Clone</h3>
+                    <div class="card-desc">
+                        <p>A frontend clone of the popular streaming service Netflix.</p>
+                    </div>
+                    <ul class="card-tech">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                    </ul>
+                </div>
+
+                <!-- Stocks View -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-top">
+                        <i class="far fa-folder"></i>
+                        <div class="card-links">
+                            <a href="https://stockxview.netlify.app/" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="card-title">Stocks View</h3>
+                    <div class="card-desc">
+                        <p>Stock data visualization using D3.js charts.</p>
+                    </div>
+                    <ul class="card-tech">
+                        <li>D3.js</li>
+                        <li>API</li>
+                    </ul>
+                </div>
+
+                <!-- Capstone -->
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-top">
+                        <i class="far fa-folder"></i>
+                        <div class="card-links">
+                            <a href="https://capstonefood.netlify.app/" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="card-title">Food Delivery App</h3>
+                    <div class="card-desc">
+                        <p>A capstone project simulating a food delivery application.</p>
+                    </div>
+                    <ul class="card-tech">
+                        <li>React</li>
+                        <li>Firebase</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" data-aos="fade-up">
+            <h2 class="section-title"><span class="sec-num">04.</span> What's Next?</h2>
+            <h2 class="contact-title">Get In Touch</h2>
+            <p class="contact-desc">
+                I am currently open for new opportunities and freelance projects. Whether you have a question or just
+                want to say hi, I'll try my best to get back to you!
+            </p>
+            <a href="mailto:thakursuryapratap9@gmail.com" class="btn-primary big-btn">Say Hello</a>
+            <div class="phone-contact">
+                <p>Or call: <a href="tel:+918859904068">+91 8859904068</a></p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-mobile">
+                <ul>
+                    <li><a href="https://github.com/singham2000" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/singham2000/" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="mailto:thakursuryapratap9@gmail.com"><i class="far fa-envelope"></i></a></li>
                 </ul>
             </div>
-            <!-- dropdown ends -->
-
+            <p>Designed & Built by Surya Pratap</p>
         </div>
-    </nav>
-    <!-- navigation bar ends  -->
+    </footer>
 
-    <!-- home -->
-    <section class="home py-4">
-        <div class="container-fluid">
-            <!-- row -->
-            <div class="row">
-                <!-- col-1  -->
-                <div class="col-md-6">
-                    <div class="home-img text-center">
-                        <img src="images/image.jpg" alt="surya pratap">
-                    </div>
-                </div>
-                <!-- col-2  -->
-                <div class="col-md-6">
-                    <div class="home-text">
-                        <p class="text-muted fs-5 mb-1">
-                            Hello <i class="bi bi-emoji-smile"></i>
-                        </p>
-                        <h1 class="text-danger fw-bolder ">
-                            Surya Pratap
-                            <h1 />
-                            <h2>
-                                Full Stack Developer
-                            </h2>
-                            <p class="text-muted">
-                                My proficiency in web development and understanding of modern tech tools make me a
-                                valuable asset in the ever-evolving digital landscape. With my expertise, i am
-                                well-equipped to tackle complex web development challenges and contribute to innovative
-                                projects that leverage the power of the MERN stack and other relevant technologies.
-                            </p>
-                            <button type="button" class="btn btn-outline-danger">Portfolio</button>
-                    </div>
-                </div>
-            </div>
-            <!-- row ends  -->
-
-
-        </div>
-    </section>
-    <!-- home ends -->
-
-    <!-- about me row  -->
-    <section class="about bg-light py-4">
-        <div class="container-fluid">
-            <div class="row justify-content-center">
-                <!-- about me title  -->
-                <div class="col-8">
-                    <section class="text-center">
-                        <h2 class="fw-bolder">
-                            About me
-                        </h2>
-                    </section>
-                </div>
-                <!-- about me body  -->
-                <div class="row">
-                    <!-- content column  -->
-                    <div class="col-md-6">
-                        <div class="about-text">
-                            <h3>
-                                Analytics
-                            </h3>
-                            <p>
-                                I am a skilled web developer with a strong knowledge of the MERN stack (MongoDB,
-                                Express.js, React, Node.js). I have a passion for programming and have dedicated a
-                                significant amount of time to learning and honing my skills. As a result of my hard
-                                work, I have successfully created impressive projects using the MERN stack,
-                                demonstrating my expertise in building dynamic and interactive web applications.
-                            </p>
-                        </div>
-                        <!-- fact row start  -->
-                        <div class="row text-center">
-                            <!-- <div class="col-md-4">
-                                <h4 class="fs-1 fw-bold">
-                                    20
-                                </h4>
-                                <p>
-                                    Projects
-                                </p>
-                            </div> -->
-                            <!-- <div class="col-md-4">
-                                <h4 class="fs-1 fw-bold">
-                                    50
-                                </h4>
-                                <p>
-                                    Happy Clients
-                                </p>
-                            </div> -->
-                            <!-- <div class="col-md-4">
-                                <h4 class="fs-1 fw-bold">
-                                    100
-                                </h4>
-                                <p>
-                                    Positive Reviews
-                                </p>
-                            </div> -->
-                        </div>
-                        <!-- fact row ends  -->
-
-                        <!-- Button and Social Media Icons Here-->
-                        <div class="row text-center">
-                            <div class="col-lg-12">
-                                <div class="row">
-                                    <div class="col-sm-4">
-                                        <button type="button" class="btn btn-outline-danger">Projects</button>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <a href="https://www.linkedin.com/in/singham2000/" class="text-danger fs-2">
-                                            <i class="bi bi-linkedin"></i>
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <a href="" class="text-danger fs-2">
-                                            <i class="bi bi-instagram"></i>
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <a href="" class="text-danger fs-2">
-                                            <i class="bi bi-twitter"></i>
-                                        </a>
-                                    </div>
-                                    <div class="col-sm-2">
-                                        <a href="" class="text-danger fs-2">
-                                            <i class="bi bi-facebook"></i>
-                                        </a>
-                                    </div>
-                                    <div class="social-link">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Button and Social Media Icons ends-->
-                    </div>
-                    <!-- content column  ends-->
-
-                    <!-- content progressbar column  -->
-                    <div class="col-md-6">
-                        <div class="skill-item my-4">
-                            <h6>HTML</h6>
-                            <div class="progress" role="progressbar" aria-label="Animated striped example"
-                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated"
-                                    style="width: 95%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item my-4">
-                            <h6>CSS</h6>
-                            <div class="progress" role="progressbar" aria-label="Animated striped example"
-                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar progress-bar-striped bg-info progress-bar-animated"
-                                    style="width: 65%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item my-4">
-                            <h6>JavaScript</h6>
-                            <div class="progress" role="progressbar" aria-label="Animated striped example"
-                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar progress-bar-striped bg-warning progress-bar-animated"
-                                    style="width: 75%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item my-4">
-                            <h6>Java</h6>
-                            <div class="progress" role="progressbar" aria-label="Animated striped example"
-                                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar progress-bar-striped bg-danger progress-bar-animated"
-                                    style="width: 75%"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- content progressbar column  ends-->
-                </div>
-
-            </div>
-        </div>
-
-    </section>
-    <!-- about me row  ends -->
-
-    <!-- Services Row Starts here  -->
-    <section class="services py-4">
-        <div class="container-fluid">
-            <div class="row justify-content-center">
-                <!-- services title  -->
-                <div class="col-8">
-                    <section class="text-center">
-                        <h2 class="fw-bolder">
-                            Projects
-                        </h2>
-                    </section>
-                </div>
-                <div class="row text-center">
-                    <div class="col-md-12 my-2 col-lg-6 ">
-                        <!-- card  -->
-                        <div class="card section-item bg-light shadow-lg ">
-                            <h3 class="fw-bolder">
-                                Netflix Clone
-                            </h3>
-                            <iframe src=" https://netflix-singham.netlify.app/ " class="linked-iframe"
-                                frameborder="0"></iframe>
-                            <!-- >>>>>>>>>>>>>>> -->
-                        </div>
-                        <!-- card Ends  -->
-                    </div>
-                    <div class="col-md-12 my-2 col-lg-6 ">
-                        <!-- card  -->
-                        <div class="card section-item bg-light shadow-lg ">
-                            <h3 class="fw-bolder">
-                                Stocks View (Stocks data view in charts using D3.js)
-                            </h3>
-                            <iframe src=" https://stockxview.netlify.app/ " class="linked-iframe"
-                                frameborder="0"></iframe>
-                            <!-- >>>>>>>>>>>>>>> -->
-                        </div>
-                        <!-- card Ends  -->
-                    </div>
-                    <div class="col-md-12 my-2 col-lg-6 ">
-                        <!-- card  -->
-                        <div class="card section-item bg-light shadow-lg ">
-                            <h3 class="fw-bolder">
-                                Capstone (Food Delivery app)
-                            </h3>
-                            <iframe src="https://capstonefood.netlify.app/" class="linked-iframe"
-                                frameborder="0"></iframe>
-                            <!-- >>>>>>>>>>>>>>> -->
-                        </div>
-                        <!-- card Ends  -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Services Row Ends here  -->
-
-
-
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
 </body>
-<!-- bootstrap here  -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
 
 </html>
